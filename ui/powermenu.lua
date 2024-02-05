@@ -9,23 +9,24 @@ naughty.notify({
 
 
 
-local function make_button()
+local function make_button(icon,event)
 
 
   local button_widget =  wibox.widget {
           {
             widget = wibox.widget.imagebox,
-            image = beautiful.poweroff_icon
+            image = icon
           },
           widget = wibox.container.margin,
           margins = 4
         }
 
   button_widget:buttons(
-    awful.button({},1, function() awesome.quit() end)
+    awful.button({},1, event)
   )
 
   return button_widget
 
 end
-poweroff = make_button()
+poweroff = make_button(beautiful.poweroff_icon,function() awful.spawn("poweroff") end)
+closesession = make_button(beautiful.closesession_icon, function() awesome.quit() end)

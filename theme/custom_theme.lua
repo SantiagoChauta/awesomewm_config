@@ -123,7 +123,6 @@ theme.titlebar_minimize_button_focus = gears.color.recolor_image(titlebar_assets
 
 -- wallpaper
 theme.wallpaper = assets_path .. "wallpaper.png"
-theme.poweroff_icon = gears.color.recolor_image(assets_path .."/icons/poweroff.svg", theme.white)
 
 -- layouts
 theme.layout_fairh = gears.color.recolor_image(themes_path.."default/layouts/fairhw.png", theme.fg_normal)
@@ -147,7 +146,8 @@ theme.layout_cornerse = gears.color.recolor_image(themes_path.."default/layouts/
 theme.launcher_icon = gears.color.recolor_image(icons_path .. "launcher.svg", theme.blue)
 theme.menu_icon = gears.color.recolor_image(icons_path .. "menu.svg", theme.fg_normal)
 theme.hints_icon = gears.color.recolor_image(icons_path .. "hints.svg", theme.blue)
-theme.powerbutton_icon = gears.color.recolor_image(icons_path .. "poweroff.svg", theme.red)
+theme.closesession_icon = gears.color.recolor_image(icons_path .. "poweroff.svg", theme.yellow)
+theme.poweroff_icon = gears.color.recolor_image(icons_path .."poweroff.svg", theme.red)
 
 theme.volume_on = gears.color.recolor_image(icons_path .. 'volume-on.svg', theme.fg_normal)
 theme.volume_muted = gears.color.recolor_image(icons_path .. 'volume-muted.svg', theme.fg_normal)
@@ -158,8 +158,6 @@ theme.network_disconnected = '睊'
 -- pfp
 theme.pfp = assets_path .. 'pfp.png'
 
--- fallback music
-theme.fallback_music = assets_path .. 'fallback-music.png'
 
 -- fallback notification icon
 theme.fallback_notif_icon = gears.color.recolor_image(icons_path .. 'hints.svg', theme.blue)
